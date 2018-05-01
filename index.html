@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Shopify Frontend Developer Challenge</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <body>
+   <div class="container">
+      <form class="form">
+         <h1 class="form__header">Stay up to date with ecommerce trends with Shopify's newsletter</h1>
+         <div class="form__line"></div>
+         <div class="form__container">
+            <div class="form__comment">Subscribe for free marketing tips</div>
+            <div class="form__input">
+               <input class="form__input__email" type="email" name="email" placeholder="Email Address">
+               <select class="form__input__interest" name="interest" onchange="changeColor(this)">
+               <option value="" selected disabled hidden>
+                  Interested in...
+               </option>
+               <option value="marketing">
+                  Marketing
+               </option>
+            </select>
+            </div>
+            <div class="form__error"></div>
+            <div>
+               <input class="form__button form__button--full" type="submit" value="Sign up now">
+            </div>
+         </div>
+
+         <div class="form__success-msg">
+            <h1>Thanks for subscribing</h1>
+            <p>You'll start receiving free tips and resources soon.</p>
+         </div>
+      </form>
+   </div>
+
+</body>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

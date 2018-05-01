@@ -1,0 +1,69 @@
+body {
+  background-color: #000639;
+}
+
+.container {
+  width: 25%;
+  margin: 40px auto;
+}
+
+.form {
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #ffffff;
+}
+.form__line {
+  background: #7ab55c;
+  height: 2px;
+  width: 1.5rem;
+  margin-bottom: 40px;
+}
+.form__header {
+  font-size: 24px;
+}
+.form__comment {
+  font-size: 16px;
+  margin: 20px 0px;
+}
+.form__success-msg {
+  display: none;
+}
+.form__success-msg h1 {
+  font-size: 16px;
+}
+.form__input {
+  display: flex;
+  justify-content: space-between;
+}
+.form__input__email {
+  width: 55%;
+  font-size: 16px;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+.form__input__interest {
+  width: 35%;
+  font-size: 16px;
+  padding: 10px 20px 10px 10px;
+  border-radius: 5px;
+  color: #7B7B7B;
+}
+.form__error {
+  color: #C23628;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px 0;
+}
+.form__button {
+  margin: 10px 0;
+  padding: 14px 10px;
+  color: white;
+  background-color: #5c6ac4;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.form__button--full {
+  width: 100%;
+}
