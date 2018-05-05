@@ -3,8 +3,28 @@ body {
 }
 
 .container {
-  width: 25%;
   margin: 40px auto;
+  width: 90%;
+}
+@media (min-width: 480px) {
+  .container {
+    width: 80%;
+  }
+}
+@media (min-width: 600px) {
+  .container {
+    width: 65%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 50%;
+  }
+}
+@media (min-width: 1080px) {
+  .container {
+    width: 32%;
+  }
 }
 
 .form {
@@ -24,36 +44,50 @@ body {
   font-size: 16px;
   margin: 20px 0px;
 }
-.form__success-msg {
-  display: none;
-}
 .form__success-msg h1 {
   font-size: 16px;
 }
 .form__input {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  box-sizing: content-box;
+  font-size: 16px;
+}
+@media (min-width: 480px) {
+  .form__input {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .form__input__email {
-  width: 55%;
-  font-size: 16px;
   padding: 10px 10px;
   border-radius: 5px;
 }
+@media (min-width: 480px) {
+  .form__input__email {
+    width: 52%;
+  }
+}
 .form__input__interest {
-  width: 35%;
-  font-size: 16px;
   padding: 10px 20px 10px 10px;
+  margin-top: 10px;
   border-radius: 5px;
-  color: #7B7B7B;
+  color: #7b7b7b;
+}
+@media (min-width: 480px) {
+  .form__input__interest {
+    width: 40%;
+    margin-top: 0;
+  }
 }
 .form__error {
-  color: #C23628;
+  color: #c23628;
   font-weight: bold;
   font-size: 12px;
   padding: 5px 0;
 }
-.form__button {
+
+.button {
   margin: 10px 0;
   padding: 14px 10px;
   color: white;
@@ -64,6 +98,6 @@ body {
   font-weight: 600;
   border-radius: 5px;
 }
-.form__button--full {
+.button--full {
   width: 100%;
 }
