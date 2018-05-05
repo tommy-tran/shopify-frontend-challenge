@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <title>Shopify Frontend Developer Challenge</title>
   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
+  
   
       <link rel="stylesheet" href="css/style.css">
 
@@ -16,35 +15,44 @@
 <body>
 
   <body>
-   <div class="container">
-      <form class="form">
-         <h1 class="form__header">Stay up to date with ecommerce trends with Shopify's newsletter</h1>
-         <div class="form__line"></div>
-         <div class="form__container">
-            <div class="form__comment">Subscribe for free marketing tips</div>
-            <div class="form__input">
-               <input class="form__input__email" type="email" name="email" placeholder="Email Address">
-               <select class="form__input__interest" name="interest" onchange="changeDropdownColor(this)">
-               <option value="" selected disabled hidden>
+  <div class="container">
+    <form class="form" onsubmit="submitHandler(event)">
+      <h1 class="form__header">Stay up to date with ecommerce trends with Shopify's newsletter</h1>
+      <div class="form__line"></div>
+      <div class="form__container">
+        <div class="form__comment">Subscribe for free marketing tips</div>
+        <div class="form__input">
+          <input class="form__input__email" type="email" name="email"  autofocus onfocus="removeErrorNotification()" placeholder="Email Address">
+          <select class="form__input__interest" name="interest" onchange="changeDropdownColor(this)">
+               <option selected disabled hidden>
                   Interested in...
                </option>
                <option value="marketing">
                   Marketing
                </option>
+               <option value="financing">
+                  Financing
+               </option>
+               <option value="entrepreneurship">
+                  Entrepreneurship
+               </option>
+               <option value="supplychain">
+                 Supply Chain Management
+               </option>
             </select>
-            </div>
-            <div class="form__error"></div>
-            <div>
-               <input id="submit-button" class="button button--full" type="submit" value="Sign up now">
-            </div>
-         </div>
+        </div>
+        <div class="form__error"></div>
+        <div>
+          <button id="submit-button" class="button button--full" type="submit" >Sign up now</button>
+        </div>
+      </div>
 
-         <div class="form__success-msg" style="display:none">
-            <h1>Thanks for subscribing</h1>
-            <p>You'll start receiving free tips and resources soon.</p>
-         </div>
-      </form>
-   </div>
+      <div class="form__success-msg" style="display:none">
+        <h1>Thanks for subscribing</h1>
+        <p>You'll start receiving free tips and resources soon.</p>
+      </div>
+    </form>
+  </div>
 
 </body>
   

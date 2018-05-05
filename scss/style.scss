@@ -11,7 +11,6 @@ $large: 1080px;
 .container {
    margin: 40px auto;
    width: 90%;
-//    600, 768, 1080
    
    @media(min-width: $extra-small) {
       width: 80%;
@@ -26,7 +25,7 @@ $large: 1080px;
    }
    
    @media (min-width: $large) {
-      width: 32%;
+      width: 500px;
    }
    
 }
@@ -39,7 +38,7 @@ $large: 1080px;
       background: #7ab55c;
       height: 2px;
       width: 1.5rem;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
    }
 
    &__header {
@@ -69,8 +68,10 @@ $large: 1080px;
       }
 
       &__email {
-         padding: 10px 10px;
+         padding: 12px 10px;
          border-radius: 5px;
+         border: none;
+         outline: none;
          
          @media(min-width: $extra-small) {
             width: 52%;
@@ -78,7 +79,9 @@ $large: 1080px;
       }
 
       &__interest {
-         padding: 10px 20px 10px 10px;
+         outline: none;
+         padding: 12px 10px;
+         border: none;
          margin-top: 10px;
          border-radius: 5px;
          color: #7b7b7b;
@@ -95,6 +98,7 @@ $large: 1080px;
       font-weight: bold;
       font-size: 12px;
       padding: 5px 0;
+      height: 15px;
    }
 }
 
@@ -108,6 +112,11 @@ $large: 1080px;
    font-size: 16px;
    font-weight: 600;
    border-radius: 5px;
+   outline: none;
+   
+   &:active {
+      background-color: #515ca5;
+   }
 
    &--full {
       width: 100%;

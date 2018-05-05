@@ -23,7 +23,7 @@ body {
 }
 @media (min-width: 1080px) {
   .container {
-    width: 32%;
+    width: 500px;
   }
 }
 
@@ -35,7 +35,7 @@ body {
   background: #7ab55c;
   height: 2px;
   width: 1.5rem;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .form__header {
   font-size: 24px;
@@ -60,8 +60,10 @@ body {
   }
 }
 .form__input__email {
-  padding: 10px 10px;
+  padding: 12px 10px;
   border-radius: 5px;
+  border: none;
+  outline: none;
 }
 @media (min-width: 480px) {
   .form__input__email {
@@ -69,7 +71,9 @@ body {
   }
 }
 .form__input__interest {
-  padding: 10px 20px 10px 10px;
+  outline: none;
+  padding: 12px 10px;
+  border: none;
   margin-top: 10px;
   border-radius: 5px;
   color: #7b7b7b;
@@ -85,6 +89,7 @@ body {
   font-weight: bold;
   font-size: 12px;
   padding: 5px 0;
+  height: 15px;
 }
 
 .button {
@@ -97,6 +102,10 @@ body {
   font-size: 16px;
   font-weight: 600;
   border-radius: 5px;
+  outline: none;
+}
+.button:active {
+  background-color: #515ca5;
 }
 .button--full {
   width: 100%;
